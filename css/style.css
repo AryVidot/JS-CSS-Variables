@@ -3,25 +3,33 @@
   padding: 0;
   box-sizing: border-box;
 }
+html {
+  font-size: 16px;
+  min-width: 380px;
+}
+
 body {
   text-align: center;
   background: #028090;
   color: #fff;
   font-family: "Helvetica neue", sans-serif;
   font-weight: 100;
-  font-size: 50px;
-  /* border: 10px solid #fff; */
+  font-size: 3.125rem;
+  height: 100vh;
 }
 .update-ctnr {
-  width: 95%;
-  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-content: center;
   margin: 0 auto;
   padding: 20px;
+  border: 10px solid var(--base);
 }
 
 /* ==== TYPOGRAPHIE ==== */
 :root {
-  --base: #ffc600;
+  --base: #bada55;
   --spacing: 10px;
   --blur: 10px;
 }
@@ -29,16 +37,15 @@ body {
 img {
   padding: var(--spacing);
   background: var(--base);
-  filter: var(--blur);
+  filter: blur(var(--blur));
 }
 
 .hl {
   color: var(--base);
 }
 
-h1 {
-  padding-top: 50px;
-  font-size: 3.125rem;
+h2 {
+  text-shadow: 2px 2px rgb(256, 256, 45, 0.7);
 }
 
 /* ==== LAYOUT ==== */
@@ -61,8 +68,38 @@ img {
 
 label {
   padding-right: 10px;
+  font-size: 2rem;
 }
 
 input {
   width: 100px;
+}
+
+.base,
+input {
+  align-items: center;
+}
+
+/* @media screen and (min-width: 386px) {
+  h2 {
+    font-size: 2.5rem;
+  }
+  label {
+    font-size: 3rem;
+  }
+} */
+
+@media screen and (min-width: 786px) {
+  h2 {
+    font-size: 5rem;
+  }
+  label {
+    font-size: 3rem;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  label {
+    font-size: 3rem;
+  }
 }
