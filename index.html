@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>CSS Variable Update w/ JS</title>
+  </head>
+  <body>
+    <div class="update-ctnr">
+      <h2>Update CSS Variables with <span class="hl">JS</span></h2>
+
+      <div class="controls">
+        <div class="spacing">
+          <label for="spacing">Spacing:</label>
+          <input
+            type="range"
+            id="spacing"
+            name="spacing"
+            min="10"
+            max="200"
+            value="10"
+            data-sizing="px"
+          />
+        </div>
+
+        <div class="blur">
+          <label for="blur">Blur:</label>
+          <input
+            type="range"
+            id="blur"
+            name="blur"
+            min="0"
+            max="25"
+            value="10"
+            data-sizing="px"
+          />
+        </div>
+
+        <div class="base">
+          <label for="base">Base Colour:</label>
+          <input type="base" id="base" name="base" value="#BADA55" />
+        </div>
+      </div>
+
+      <img
+        src="https://images.pexels.com/photos/3952238/pexels-photo-3952238.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260"
+        alt="Covid 19"
+      />
+    </div>
+
+    <script src="main.js"></script>
+  </body>
+</html>
